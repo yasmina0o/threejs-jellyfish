@@ -41,8 +41,8 @@ async function loadShader(url) {
   return await res.text();
 }
 
-const vertexShader = await loadShader('/src/shaders/jellyfish.vert');
-const fragmentShader = await loadShader('/src/shaders/jellyfish.frag');
+const vertexShader = await loadShader('src/shaders/jellyfish.vert');
+const fragmentShader = await loadShader('src/shaders/jellyfish.frag');
 
 const loader = new GLTFLoader();
 const jellyfishes = [];
